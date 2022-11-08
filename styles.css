@@ -6,6 +6,7 @@ html,body
     padding:0px;
     background-color: grey;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 body
 {
@@ -18,17 +19,31 @@ body
 #board
 {
     border: 1px solid white;
+    width:100vh;
+    max-width: 20vh;
+}
+.result
+{
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid green;
+
 }
 .numpad
 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;    
 }
 
-.num1
+.num
 {
     padding:5px;
-    background-color: black;
-    color: white;
+    margin: 5px; 
+    width: 30px;
+    height: 30px;
+}
+.center
+{
+    align-items: center;
+    justify-content: center;
 }
